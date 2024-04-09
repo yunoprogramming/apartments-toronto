@@ -1,5 +1,3 @@
-/** @format */
-
 import type { Metadata } from 'next';
 import Head from 'next/head';
 import { Inter } from 'next/font/google';
