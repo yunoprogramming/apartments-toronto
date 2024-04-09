@@ -11,7 +11,7 @@ export default function Home() {
 				{/* Logo */}
 				<div className='w-full max-w-screen-xl'>
 					<Image
-						src='/images/logo.png'
+						src='/images/header.png'
 						alt='Apartments Toronto Logo'
 						layout='responsive'
 						width={100}
@@ -26,7 +26,7 @@ export default function Home() {
 					id='about'
 					className='p-5 flex flex-col items-center justify-center text-center'>
 					{/* Content of the about section */}
-					<h1 className='font-lovelo text-3xl mb-4 mt-4'>
+					<h1 className='font-lovelo text-3xl mb-4 mt-8'>
 						Find Your Next Apartment
 					</h1>
 					{/* Call to action button */}
