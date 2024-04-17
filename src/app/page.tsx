@@ -32,7 +32,7 @@ export default function Home() {
 					{/* Call to action button */}
 					<a
 						href='https://docs.google.com/forms/d/e/1FAIpQLSeUjYLkjhNkqBJ6u0icwt6tAPXN47DQOEXoGk0OYxcRz0kGVg/viewform?fbclid=PAAaYVcgtYN4-VOejdGQm9Tdb9H4AE1UCzpMd9UmK8WruPlLaqBKv-2HwxGXg_aem_AdJi-cWuFo7sApq0Sejlop7LFupo8EyVC9tuxeS4CxnjhyQYG5-LwJxVGiu2pOcZa2E'
-						className='bg-red-600 hover:bg-red-700 text-white font-lovelo font-bold py-2 px-4 rounded mb-8 shadow-lg'>
+						className='bg-red-600 hover:bg-red-700 text-white font-lovelo font-bold py-4 px-8 rounded-lg mb-8 shadow-xl'>
 						CLIENT INQUIRY FORM
 					</a>
 				</section>
