@@ -43,16 +43,16 @@ export default function Home() {
 					<h1 className='font-lovelo text-3xl mb-4'>WHO WE ARE</h1>
 					<p className='font-open-sans text-lg mb-8'>
 						Apartments Toronto was created with the passion and drive to help
-						people find their new home in an easy and efficient
-						manner with the use of social media.
+						people find their new home in an easy and efficient manner with the
+						use of social media.
 					</p>
 					<h1 className='font-lovelo text-3xl mb-4'>CLIENTS</h1>
 					<p className='font-open-sans text-lg mb-8'>
-						We will use our extensive realtor network to pair you up with the
-						best realtor that fits your needs and can help you find exactly what
+						We will use our extensive real estate agent network to pair you up with the
+						best real estate agent that fits your needs and can help you find exactly what
 						you’re looking for.
 					</p>
-					<h1 className='font-lovelo text-3xl mb-4'>REALTORS</h1>
+					<h1 className='font-lovelo text-3xl mb-4'>REAL ESTATE AGENTS</h1>
 					<p className='font-open-sans text-lg mb-8'>
 						We will use our social media presence to give you brand exposure,
 						expand your network, access to hot leads and feature your real
