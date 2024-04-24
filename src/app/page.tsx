@@ -1,8 +1,30 @@
 /** @format */
 'use client';
 import Image from 'next/image';
+import { useEffect } from 'react';
+import $ from 'jquery';
 
 export default function Home() {
+	// Add the jQuery code inside a useEffect hook
+	useEffect(() => {
+		$('form').on('submit', function (this: any, e: any) {
+			e.preventDefault();
+
+			$.ajax({
+				url: $(this).attr('action'),
+				method: 'POST',
+				dataType: 'jsonp',
+				data: $(this).serialize(),
+				success: function (response: any) {
+					console.log('Form submitted successfully!');
+				},
+				error: function (err: any) {
+					console.error('Error submitting form: ', err);
+				},
+			});
+		});
+	}, []);
+
 
 	return (
 		<div className='min-h-screen bg-white text-black flex flex-col'>
@@ -23,7 +45,7 @@ export default function Home() {
 			{/* Body */}
 			<main className='flex-grow flex justify-center flex-col'>
 				<section
-					id='about'
+					id='inquiry`'
 					className='p-5 flex flex-col items-center justify-center text-center'>
 					{/* Content of the about section */}
 					<h1 className='font-lovelo text-3xl mb-4 mt-8'>
@@ -48,16 +70,55 @@ export default function Home() {
 					</p>
 					<h1 className='font-lovelo text-3xl mb-4'>CLIENTS</h1>
 					<p className='font-open-sans text-lg mb-8'>
-						We will use our extensive real estate agent network to pair you up with the
-						best real estate agent that fits your needs and can help you find exactly what
-						you’re looking for.
+						We will use our extensive real estate agent network to pair you up
+						with the best real estate agent that fits your needs and can help
+						you find exactly what you’re looking for.
 					</p>
 					<h1 className='font-lovelo text-3xl mb-4'>REAL ESTATE AGENTS</h1>
 					<p className='font-open-sans text-lg mb-8'>
-						We will use our social media presence to give you brand exposure,
+						We will use our social media presence to give your brand exposure,
 						expand your network, access to hot leads and feature your real
 						estate opportunities.
 					</p>
+				</section>
+				{/* Subscription Form */}
+				<section
+					id='newsletter'
+					className='p-5 flex flex-col items-center justify-center text-center'>
+					{/* Subscription Form Content */}
+					<h1 className='font-lovelo text-3xl mb-4'>JOIN OUR NEWSLETTER</h1>
+					<p className='font-open-sans text-lg mb-8'>
+						Get monthly updates on apartments statistics delivered directly to
+						your inbox.
+					</p>
+					<form
+						action='https://script.google.com/macros/s/AKfycbx7PiAWguGdtcw4iMS4UhIeGNdm7eL0LJ6ZFM3bvRbETHHvlilPNJ6LDHb4fWf4iM0Vng/exec'
+						method='post'
+						className='mb-8'>
+						<div className='flex flex-col md:flex-row'>
+							<label
+								htmlFor='email'
+								className='sr-only'>
+								Email
+							</label>
+							<input
+								type='email'
+								id='email'
+								name='email'
+								placeholder='Email'
+								className='bg-gray-100 border border-gray-300 rounded-md py-2 px-4 mb-6 md:mb-0 mr-0 md:mr-4 focus:outline-none focus:ring-2 focus:ring-red-600'
+							/>
+							<button
+								type='submit'
+								className='bg-red-600 hover:bg-red-700 text-white font-lovelo font-bold py-2 px-6 rounded-lg shadow-xl'>
+								JOIN NOW
+							</button>
+						</div>
+					</form>
+				</section>
+				<section
+					id='contact'
+					className='p-5 flex flex-col items-center justify-center text-center'>
 					<h1 className='font-lovelo text-3xl mb-4'>CONTACT US</h1>
 					<p className='font-open-sans text-lg mb-4'>
 						Please do not hesitate to contact us via email or DM if you have any
