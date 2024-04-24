@@ -17,6 +17,7 @@ export default function Home() {
 				data: $(this).serialize(),
 				success: function (response: any) {
 					console.log('Form submitted successfully!');
+					console.log($(this).serialize());
 				},
 				error: function (err: any) {
 					console.error('Error submitting form: ', err);
