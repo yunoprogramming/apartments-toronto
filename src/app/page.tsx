@@ -19,13 +19,17 @@ export default function Home() {
 					console.log('Form submitted successfully!');
 					console.log($(this).serialize());
 				},
-				error: function (err: any) {
-					console.error('Error submitting form: ', err);
+				error: function (jqXHR: any, textStatus: any, errorThrown: any) {
+					console.error(
+						'Error submitting form: ',
+						jqXHR,
+						textStatus,
+						errorThrown,
+					);
 				},
 			});
 		});
 	}, []);
-
 
 	return (
 		<div className='min-h-screen bg-white text-black flex flex-col'>
@@ -93,7 +97,7 @@ export default function Home() {
 						your inbox.
 					</p>
 					<form
-						action='https://script.google.com/macros/s/AKfycbxsqg8FBosw6NpjtIWpkB6Dpyr4TL31fHgvm-xmFQHjMcWmr5sYPstbSuKeEMZMhM7kow/exec'
+						action='https://script.google.com/macros/s/AKfycbytEGPgyaDRsaOQBlII_dMdOpARhEOTTkBslUUTCA9yd20F8riMN8aakKeyNKgIjrtJeQ/exec'
 						method='post'
 						className='mb-8'>
 						<div className='flex flex-col md:flex-row'>
