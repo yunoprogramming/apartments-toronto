@@ -1,36 +1,8 @@
 /** @format */
 'use client';
 import Image from 'next/image';
-import { useEffect } from 'react';
-import $ from 'jquery';
 
 export default function Home() {
-	// Add the jQuery code inside a useEffect hook
-	useEffect(() => {
-		$('form').on('submit', function (this: any, e: any) {
-			e.preventDefault();
-
-			$.ajax({
-				url: $(this).attr('action'),
-				method: 'POST',
-				dataType: 'jsonp',
-				data: $(this).serialize(),
-				success: function (response: any) {
-					console.log('Form submitted successfully!');
-					console.log($(this).serialize());
-				},
-				error: function (jqXHR: any, textStatus: any, errorThrown: any) {
-					console.error(
-						'Error submitting form: ',
-						jqXHR,
-						textStatus,
-						errorThrown,
-					);
-				},
-			});
-		});
-	}, []);
-
 	return (
 		<div className='min-h-screen bg-white text-black flex flex-col'>
 			{/* Header */}
