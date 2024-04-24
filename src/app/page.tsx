@@ -92,7 +92,7 @@ export default function Home() {
 						your inbox.
 					</p>
 					<form
-						action='https://script.google.com/macros/s/AKfycbx7PiAWguGdtcw4iMS4UhIeGNdm7eL0LJ6ZFM3bvRbETHHvlilPNJ6LDHb4fWf4iM0Vng/exec'
+						action='https://script.google.com/macros/s/AKfycbxsqg8FBosw6NpjtIWpkB6Dpyr4TL31fHgvm-xmFQHjMcWmr5sYPstbSuKeEMZMhM7kow/exec'
 						method='post'
 						className='mb-8'>
 						<div className='flex flex-col md:flex-row'>
