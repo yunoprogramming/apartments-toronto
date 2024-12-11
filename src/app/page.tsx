@@ -45,18 +45,6 @@ export default function Home() {
 						people find their new home in an easy and efficient manner with the
 						use of social media.
 					</p>
-					<h1 className='font-lovelo text-3xl mb-4'>CLIENTS</h1>
-					<p className='font-open-sans text-lg mb-8'>
-						We will use our extensive real estate agent network to pair you up
-						with the best real estate agent that fits your needs and can help
-						you find exactly what you’re looking for.
-					</p>
-					<h1 className='font-lovelo text-3xl mb-4'>REAL ESTATE AGENTS</h1>
-					<p className='font-open-sans text-lg mb-8'>
-						We will use our social media presence to give your brand exposure,
-						expand your network, access to hot leads and feature your real
-						estate opportunities.
-					</p>
 				</section>
 				{/* Subscription Form */}
 				<section
@@ -112,10 +100,10 @@ export default function Home() {
 			</main>
 
 			{/* Footer */}
-			<footer className='flex justify-center p-5'>
+			<footer className='flex justify-center p-5 space-x-5'>
 				<a
 					href='https://www.instagram.com/apartmentstoronto/'
-					className='mr-5'>
+					className='p-1'>
 					<Image
 						src='/images/instagram.png'
 						alt='Instagram'
@@ -123,10 +111,18 @@ export default function Home() {
 						height={25}
 					/>
 				</a>
-				<a href='https://www.tiktok.com/@apartmentstoronto/'>
+				<a href='https://www.tiktok.com/@apartmentstoronto/' className='p-1'>
 					<Image
 						src='/images/tiktok.png'
 						alt='TikTok'
+						width={25}
+						height={25}
+					/>
+				</a>
+				<a href='https://www.youtube.com/@apartmentstoronto/' className='p-1'>
+					<Image
+						src='/images/youtube.png'
+						alt='YouTube'
 						width={25}
 						height={25}
 					/>
