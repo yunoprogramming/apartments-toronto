@@ -26,7 +26,7 @@ export default function Home() {
           id="inquiry"
           className="p-4 flex flex-col items-center justify-center text-center mt-16" 
         >
-          <h1 className="font-lovelo text-3xl mb-3">Find Your Next Apartment</h1> {/* Reduced bottom margin */}
+          <h1 className="font-lovelo text-3xl mb-3">Find Your Next Home</h1> {/* Reduced bottom margin */}
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSeUjYLkjhNkqBJ6u0icwt6tAPXN47DQOEXoGk0OYxcRz0kGVg/viewform?fbclid=PAAaYVcgtYN4-VOejdGQm9Tdb9H4AE1UCzpMd9UmK8WruPlLaqBKv-2HwxGXg_aem_AdJi-cWuFo7sApq0Sejlop7LFupo8EyVC9tuxeS4CxnjhyQYG5-LwJxVGiu2pOcZa2E"
             className="bg-red-600 hover:bg-red-700 text-white font-lovelo font-bold py-4 px-8 rounded-lg mb-4 shadow-xl"  // Reduced bottom margin here
@@ -40,7 +40,7 @@ export default function Home() {
           id="calendy"
           className="p-4 flex flex-col items-center justify-center text-center mt-4"  // Reduced padding and margin-top
         >
-          <h1 className="font-lovelo text-3xl mb-3">Buy/Sell Your Home</h1>
+          <h1 className="font-lovelo text-3xl mb-3">Lease With Us</h1>
           <a
             href="https://calendly.com/apartmentstoronto"
             className="bg-red-600 hover:bg-red-700 text-white font-lovelo font-bold py-4 px-8 rounded-lg mb-4 shadow-xl"
@@ -52,7 +52,10 @@ export default function Home() {
         <section id="about" className="p-4 flex flex-col items-center justify-center text-center mt-4">  {/* Reduced padding and margin-top */}
           <h1 className="font-lovelo text-3xl mb-3">WHO WE ARE</h1> {/* Reduced bottom margin */}
           <p className="font-open-sans text-lg mb-4"> {/* Reduced bottom margin */}
-            Apartments Toronto was created with the passion and drive to help people find their new home in an easy and efficient manner with the use of social media.
+            Apartments Toronto was founded to simplify the rental process by seamlessly connecting landlords and tenants through the power of social media.
+          </p>
+          <p className="font-open-sans text-lg mb-4">
+            We make it easy for renters to find their next home and for landlords to find qualified tenants, all in one convenient place.
           </p>
         </section>
 
@@ -92,7 +95,7 @@ export default function Home() {
         <section id="contact" className="p-4 flex flex-col items-center justify-center text-center mt-4">  {/* Reduced padding and margin-top */}
           <h1 className="font-lovelo text-3xl mb-3">CONTACT US</h1>  {/* Reduced bottom margin */}
           <p className="font-open-sans text-lg mb-3"> {/* Reduced bottom margin */}
-            Please do not hesitate to contact us via email or DM if you have any questions or concerns.
+            For marketing collaborations, please email us.
           </p>
           <p className="font-open-sans text-lg mb-3"> {/* Reduced bottom margin */}
             <a
